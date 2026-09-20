@@ -25,7 +25,7 @@ McToolsProcedure/
 └── tools/build-by-category.js   ← régénère by-category/ après une modification
 ```
 
-⚠️ **Pourquoi les vrais fichiers restent à plat** : je suis allé vérifier directement dans le code
+**Pourquoi les vrais fichiers restent à plat** : je suis allé vérifier directement dans le code
 source de MCreator (`TemplateGeneratorConfiguration.java`) comment il charge les templates de
 génération de code — il les cherche par **chemin exact** (`forge-1.20.1/procedures/nom_du_bloc.java.ftl`),
 sans recherche récursive dans des sous-dossiers. Ranger ces fichiers dans des sous-dossiers casserait

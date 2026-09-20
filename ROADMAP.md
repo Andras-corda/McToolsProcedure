@@ -1,16 +1,18 @@
-# McToolsProcedure — Feuille de route complète
+# McToolsProcedure — Feuille de route complète [FR]
 
 Tout ce que je peux ajouter/améliorer pour que ce plugin devienne une vraie boîte à outils complète.
 Classé par catégorie existante, puis nouvelles catégories proposées, puis améliorations transverses.
-Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-value) · ★ (confort/niche).
+Priorité : 
+- ★★★ (très utile, quasi indispensable)
+- ★★ (solide plus-value)
+- ★ (confort/niche).
 
-**Statut : ★★★ fait (v2.1.0), Liste+ ajouté sur demande (v2.2.0), un premier tour de ★★ fait (v2.3.0,
-32 blocs + catégorie Combat+).** Les lignes ✅ sont livrées ; les lignes 🚫 ont été volontairement
-écartées (déjà natives dans MCreator, ou pas fiablement faisable en 1.20.1) — voir la raison à côté.
+**Statut : ★★★ fait (v2.1.0), Liste+ ajouté (v2.2.0), un premier tour de ★★ fait (v2.3.0,
+32 blocs + catégorie Combat+).** Les lignes ✅ sont livrées ; les lignes 🚫 ont été volontairement écartées (déjà natives dans MCreator, ou pas fiablement faisable en 1.20.1) — voir la raison à côté.
 
 ---
 
-## 🔢 Math+ — à compléter
+## Math+ — à compléter
 
 - ✅ ~~**Nombre aléatoire dans une plage** (int/float)~~ → `math_random_int`, `math_random_float`
 - ✅ ~~**Trigonométrie en degrés** (sin, cos, tan, atan2)~~ → `math_sin/cos/tan/atan2_degrees`
@@ -21,7 +23,7 @@ Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-
 - ✅ ~~**Conversion couleur** (hex/int ↔ RGB)~~ → `math_color_rgb_to_int`, `math_color_int_to_r/g/b` (HSV pas encore fait)
 - ★ **Bruit de Perlin/Simplex 2D** (génération procédurale, terrain custom)
 
-## 🔤 Texte+ — à compléter
+## Texte+ — à compléter
 
 - ✅ ~~**Majuscule / minuscule / première lettre en majuscule**~~ → `text_uppercase/lowercase/capitalize`
 - ✅ ~~**Longueur d'un texte**, **contient à une position (indexOf)**~~ → `text_length`, `text_index_of`
@@ -33,7 +35,7 @@ Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-
 - ★ **Expression régulière** : correspond / remplacer par regex
 - ★ **Encoder/décoder en Base64**
 
-## 🧍 Entité+ — à compléter
+## Entité+ — à compléter
 
 - ✅ ~~**Pourcentage de vie**~~ → `entity_health_percentage`
 - ✅ ~~**NBT persistant complet**~~ → `entity_get_nbt_text`, `entity_set_nbt_text`
@@ -46,7 +48,7 @@ Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-
 - ✅ ~~**Entité la plus proche par tag dans un rayon**~~ → `entity_nearest_by_tag`
 - ★ **Immunité au feu temporaire**, **entité au sol ?**
 
-## 🌍 Monde+ — à compléter
+## Monde+ — à compléter
 
 - ✅ ~~**Hauteur du terrain à une position (x,z)**~~ → `world_get_terrain_height`
 - ✅ ~~**Météo** : forcer pluie/orage/beau temps avec durée~~ → `world_set_weather`
@@ -59,18 +61,18 @@ Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-
 - ★ **Bordure du monde get/set**
 - ★ **Explosion personnalisée sans dégât de bloc** (juste l'effet visuel/dégât d'entités)
 
-## 🔌 Redstone+ — à compléter
+## Redstone+ — à compléter
 
 - ✅ ~~**Le bloc est-il un conducteur redstone ?**~~ → `redstone_is_conductor`
 - ★ **Simuler l'affaiblissement du signal sur une distance** (façon fil redstone)
 - ★ **Créer une horloge redstone virtuelle** (callback périodique tant qu'une condition est vraie)
 
-## 🆔 UUID+ — à compléter
+## UUID+ — à compléter
 
 - ✅ ~~**Nom de joueur → UUID** et **UUID → nom de joueur**~~ → `uuid_name_to_uuid`, `uuid_uuid_to_name` (joueurs connectés uniquement)
 - ★★ **Stocker/lire une valeur arbitraire liée à un UUID** — voir *Données+*, déjà couvert par joueur
 
-## 🖥️ Interface+ (Gui) — à compléter
+## Interface+ (Gui) — à compléter
 
 - ✅ ~~**Barre de progression (Boss Bar)**~~ → `gui_bossbar_set`, `gui_bossbar_remove`
 - ✅ ~~**Tableau des scores (sidebar scoreboard)**~~ → `gui_scoreboard_set_sidebar_line`, `gui_scoreboard_remove`
@@ -79,7 +81,7 @@ Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-
 - ⏸️ **Ouvrir un GUI custom (menu/coffre)** — reporté : nécessite d'enregistrer un vrai `MenuType` au chargement du mod, ce qu'un plugin de blocs de procédure ne peut pas faire seul (il faudrait un "Java plugin" MCreator, une autre catégorie de plugin plus lourde)
 - ★ **Texte cliquable/survolable** (lié au Component riche de Texte+)
 
-## 🎯 Scan+ — à compléter
+## Scan+ — à compléter
 
 - ✅ ~~**Cône de vision**~~ → `scan_vision_cone`
 - ✅ ~~**Hauteur du sol sous un point (raycast vertical)**~~ → `scan_downward_trace_distance`
@@ -87,7 +89,7 @@ Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-
 - ✅ ~~**Joueur le plus proche dans le champ de vision d'une entité**~~ → `scan_nearest_player_in_view`
 - ★ **Trace multiple en éventail** (plusieurs rayons parallèles/en cône, façon fusil à pompe)
 
-## 🧠 Logique+ — à compléter
+## Logique+ — à compléter
 
 - ✅ ~~**Cooldown / Temporisation par clé**~~ → `logic_start_cooldown`, `logic_is_on_cooldown`, `logic_cooldown_remaining`
 - ✅ ~~**Boucle "pour" sécurisée avec limite d'itérations**~~ → `logic_safe_repeat`
@@ -97,7 +99,7 @@ Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-
 
 ---
 
-## 📦 Nouvelles catégories
+## Nouvelles catégories
 
 ### Inventaire+ (`inventory`)
 - ✅ ~~Compter un item précis dans tout l'inventaire~~ → `inventory_count_item`
@@ -127,7 +129,7 @@ Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-
 
 ---
 
-## 🛠️ Améliorations transverses (pas de nouveaux blocs, mais qualité du plugin)
+## Améliorations secondaires (pas de nouveaux blocs, mais qualité du plugin)
 
 - ★★★ **Icônes personnalisées** sur les blocs les plus utilisés (actuellement aucun bloc n'a d'icône ; MCreator le permet via `field_image`) — repérage visuel bien plus rapide dans une longue liste — *pas encore fait, prochain sur la liste*
 - ★★ **Fusionner/nettoyer les doublons** : le comptage d'entités existe en version "cube" (Monde+) et "sphère" (Entité+) — garder les deux ou déprécier le cube ?
@@ -137,57 +139,57 @@ Priorité : ★★★ (très utile, quasi indispensable) · ★★ (solide plus-
 
 ---
 
-## 🆕 Idées supplémentaires (tour 2) — nouveaux domaines pas encore couverts
+## Idées supplémentaires — nouveaux domaines pas encore couverts
 
 Tout ce qui suit n'existe encore dans aucune catégorie du plugin, contrairement à la première liste
 qui complétait l'existant. Classé par nouveau domaine, avec proposition de catégorie MCreator.
 
-### 🌀 Dimensions+ (`dimension`) ✅ fait
+### Dimensions+ (`dimension`) ✅ fait
 - ✅ ~~**Téléporter vers une dimension à une position précise**~~ → `dimension_teleport_to_position` (le natif `entity_switch_dimension` garde les mêmes coordonnées, celui-ci en vise de nouvelles)
 - ✅ ~~**Téléportation sûre**~~ → `dimension_safe_teleport` (se cale sur le point le plus haut solide)
 - 🚫 **Nom/id de la dimension actuelle** — déjà natif (`entity_dimension_id`, `get_dimensionid`, etc.)
 - ★ **La dimension existe-t-elle ?** (optionnel, non fait)
 
-### 🎁 Loot & Recettes+ (`loot`) ✅ fait
+### Loot & Recettes+ (`loot`) ✅ fait
 - 🚫 **Obtenir le résultat d'une table de loot** — déjà natif (`loot_table_foreach`, `entity_loot_table_foreach`, `world_loot_table_foreach`)
 - 🚫 **Une recette est-elle débloquée ?** — déjà natif (`entity_has_recipe`, `entity_add_recipe`, `entity_remove_recipe`)
 - ✅ ~~**Donner un livre enchanté aléatoire**~~ → `loot_random_enchanted_book`
 - ★ Débloquer/verrouiller une recette manuellement (déjà couvert par les blocs natifs ci-dessus)
 
-### 🧟 IA & Comportement+ (`ai`) ✅ fait
+### IA & Comportement+ (`ai`) ✅ fait
 - ✅ ~~**Faire fuir une entité loin d'une autre**~~ → `ai_flee_from_entity`
 - 🚫 **Définir la cible d'attaque d'un mob** — déjà natif (`entity_set_target`, `entity_gettargetentity`)
 - ✅ ~~**Faire suivre une entité une autre**~~ → `ai_follow_entity`
 - 🚫 **Pathfinding vers une position précise** — déjà natif (`entity_pathfind_to`)
 - ★ Faire fuir loin d'une position (pas seulement une entité) — non fait
 
-### 🏆 Progression+ (`progression`) ✅ fait
+### Progression+ (`progression`) ✅ fait
 - ✅ ~~**Donner/retirer un avancement personnalisé**~~ → `progression_grant_advancement`, `progression_revoke_advancement`
 - 🚫 **Niveaux d'XP** — déjà natif (`entity_add_xp_level`, `entity_remove_xp_level`)
 - ✅ ~~**Point de réapparition**~~ → `progression_set_respawn_point` (lecture x/y/z pas encore faite)
 - ★ Compteur de statistique custom — non fait
 
-### 💬 Communication+ (`chat`) 🚫 domaine entier déjà natif
+### Communication+ (`chat`) 🚫 domaine entier déjà natif
 - 🚫 **Diffuser un message à tous** — déjà natif (`world_send_chat`)
 - 🚫 **Message privé à un joueur** — déjà natif (`entity_send_chat`, avec option barre d'action)
 - ★ Texte traduit (clé i18n) — non fait, niche
 
-### ⏱️ Planification avancée+ (`schedule`) ✅ fait
+### Planification avancée+ (`schedule`) ✅ fait
 - ✅ ~~**Minuterie répétée annulable**~~ → `schedule_repeat_while` + `schedule_stop_repeating`
 - ★ Nombre de jours écoulés depuis la création du monde — non fait
 - ★ Est-ce exactement l'aube/le crépuscule ? — non fait
 
-### 🎥 Effets caméra & HUD+ (`camera`) ⏸️ domaine entier reporté
+### Effets caméra & HUD+ (`camera`) ⏸️ domaine entier reporté
 - ⏸️ **Secousse de caméra**, **flash plein écran**, **zoom/FOV** — tout ce domaine nécessite un vrai
   canal réseau (paquet client custom + gestionnaire côté client), ce qu'un plugin de blocs JSON pur ne
   peut pas enregistrer seul (même limite que le GUI custom et le stockage global) ; nécessiterait un
   "Java plugin" MCreator, un projet plus lourd
 
-### 🔒 Sécurité & Permissions+ (`permission`) ✅ fait
+### Sécurité & Permissions+ (`permission`) ✅ fait
 - ✅ ~~**Le joueur est-il opérateur ?**, **niveau de permission**~~ → `permission_is_op`, `permission_has_level`
 - ★ Whitelist / liste de bannissement — non fait
 
-### 🧮 Physique avancée+ (`physics`) ✅ fait
+### Physique avancée+ (`physics`) ✅ fait
 - ✅ ~~**Trajectoire parabolique**~~ → `physics_calc_launch_speed_for_height`, `physics_calc_time_to_apex` (version simplifiée : hauteur/temps, pas encore l'angle/distance complets)
 - ✅ ~~**Force d'explosion sans dégât de bloc**~~ → `physics_explosion_no_block_damage`
 - 🚫 **Activer/désactiver la gravité** — déjà natif (`entity_set_nogravity`, `entity_has_nogravity`)
@@ -196,13 +198,12 @@ qui complétait l'existant. Classé par nouveau domaine, avec proposition de cat
 
 ## Suite
 
-Le tour ★★ de la première liste ET le "tour 2" (9 domaines) sont terminés — faits, déjà natifs, ou
-reportés avec raison documentée à chaque fois. Reste :
+Les ajouts ★★ de la première liste sont terminés — faits, déjà natifs, ou reportés avec raison documentée à chaque fois. 
+
+Reste :
 - Les points reportés faute d'infrastructure (structures, copier/coller de zone, GUI custom, stockage
   global, effets caméra/HUD) — tous nécessitent un vrai "Java plugin" MCreator (classe Java compilée
   et enregistrée au chargement du mod), une catégorie de plugin différente et plus lourde que celle-ci ;
   je ne les ferai que si tu confirmes vouloir franchir cette étape.
 - Les nombreux ★ (confort/niche) laissés de côté dans chaque section ci-dessus.
-- Les **icônes personnalisées sur les blocs** (amélioration transverse ★★★ jamais faite).
-
-Dis-moi si tu veux que je continue sur les ★ restants, les icônes, ou qu'on s'arrête là pour l'instant.
+- Les **icônes personnalisées sur les blocs** (amélioration secondaires ★★★ jamais faite).
