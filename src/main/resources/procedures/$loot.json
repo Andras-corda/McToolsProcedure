@@ -1,1 +1,4 @@
-{ "color": "#8fa55b" }
+{
+  "color": "#8fa55b",
+  "parent_category": "group_player"
+}

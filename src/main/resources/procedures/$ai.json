@@ -1,1 +1,4 @@
-{ "color": "#8f6e5b" }
+{
+  "color": "#8f6e5b",
+  "parent_category": "group_entity"
+}

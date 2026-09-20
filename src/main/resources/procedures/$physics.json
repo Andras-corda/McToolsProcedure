@@ -1,1 +1,4 @@
-{ "color": "#a58f6e" }
+{
+  "color": "#a58f6e",
+  "parent_category": "group_world"
+}

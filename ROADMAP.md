@@ -131,6 +131,10 @@ Priorité :
 
 ## Améliorations secondaires (pas de nouveaux blocs, mais qualité du plugin)
 
+- ✅ ~~**Regrouper les 21 catégories en sous-catégories imbriquées**~~ → 5 groupes parents
+  (`parent_category`), sur le principe des catégories natives de MCreator (`Block procedures` >
+  `Actions`/`Data`/`Energy & fluid`) : Math & Texte+, Entités & Combat+, Monde & Environnement+,
+  Joueur & Interface+, Données & Logique+
 - ★★★ **Icônes personnalisées** sur les blocs les plus utilisés (actuellement aucun bloc n'a d'icône ; MCreator le permet via `field_image`) — repérage visuel bien plus rapide dans une longue liste — *pas encore fait, prochain sur la liste*
 - ★★ **Fusionner/nettoyer les doublons** : le comptage d'entités existe en version "cube" (Monde+) et "sphère" (Entité+) — garder les deux ou déprécier le cube ?
 - ★★ **`toolbox_init` par défaut** sur davantage de blocs (pré-remplir x/y/z avec les blocs "coordonnée du bloc actuel", comme le fait MCreator nativement) — gain de temps à l'usage
@@ -196,14 +200,65 @@ qui complétait l'existant. Classé par nouveau domaine, avec proposition de cat
 
 ---
 
+## Idées supplémentaires (tour 3) — liste d'ajouts probables
+
+Rien n'est fait ici, c'est une proposition. Classé par thème ; plusieurs points redeviennent réalistes
+maintenant que **Liste+** existe (v2.2.0) — au moment où "copier/coller une zone" avait été reporté,
+il n'y avait pas encore de type Liste pour porter les données capturées.
+
+### Liste+ (compléments) — la catégorie a été livrée avec l'essentiel, mais sans tri/mélange/fusion
+- ★★★ **Trier une liste** (de nombres ou de texte)
+- ★★ **Inverser une liste**
+- ★★ **Mélanger une liste** (shuffle)
+- ★★ **Sous-liste** (du index A à B)
+- ★★ **Fusionner une liste en texte** avec un séparateur personnalisé (join) — `list_to_text` actuel utilise le format Java brut `[a, b, c]`
+- ★★ **Découper un texte directement en liste** (l'inverse de join)
+- ★ **Élément au hasard** dans une liste
+
+### Statistiques+ (sur une Liste+ de nombres)
+- ★★★ **Somme** d'une liste de nombres
+- ★★★ **Moyenne** d'une liste de nombres
+- ★★ **Min / Max d'une liste entière** (pas seulement 2 valeurs comme `math_min`/`math_max` actuels)
+- ★ Écart-type / médiane
+
+### Structures & Zones+ — reconsidéré grâce à Liste+
+- ★★ **Capturer une zone de blocs dans une liste** (mini-schématique en mémoire : positions relatives + états de bloc) — usage "copier maintenant, coller maintenant" dans la même session, sans avoir besoin d'un vrai fichier de sauvegarde
+- ★★ **Recoller une liste capturée** à une nouvelle position
+- ★ **Faire pivoter une zone capturée** (rotation 90°/180°)
+- Reste hors de portée sans "Java plugin" : sauvegarder une capture **de façon persistante** entre les
+  sessions (ça, ça a vraiment besoin d'un fichier/`SavedData`)
+
+### Item+ (nouvelle catégorie)
+- ★★★ **Nom personnalisé** de l'objet tenu (renommer sans passer par une enclume)
+- ★★ **Ajouter/lire une ligne de lore** sur l'objet tenu
+- ★★ **CustomModelData** (lire/écrire) — c'est la vraie réponse générique et fiable à la question
+  "changer la texture d'un objet" posée plus tôt dans le projet : en combinant ce tag avec un modèle
+  conditionnel dans un resource pack (fourni par toi, hors de portée du plugin), on obtient un vrai
+  changement visuel sans mixin ni renderer custom
+- ★ Fusionner deux stacks compatibles en un seul
+
+### Multijoueur+ (nouvelle catégorie)
+- ★★★ **Liste de tous les joueurs connectés** (renvoie une **Liste+** d'entités — se combine avec `list_foreach`)
+- ★★ **Nombre de joueurs connectés**
+- ★★ **Expulser un joueur** (kick) avec message personnalisé
+- ★ **Latence (ping)** d'un joueur
+
+### Son+ (compléments, pas encore de catégorie dédiée)
+- ★★ **Jouer un son avec variation aléatoire de hauteur** (pitch) — évite l'effet "robotique" d'un son toujours identique
+- ★ Arrêter tous les sons en cours pour un joueur
+
+---
+
 ## Suite
 
-Les ajouts ★★ de la première liste sont terminés — faits, déjà natifs, ou reportés avec raison documentée à chaque fois. 
+Les ajouts ★★ de la première liste et le "tour 2" sont terminés — faits, déjà natifs, ou reportés avec
+raison documentée à chaque fois. Le "tour 3" ci-dessus est une proposition, pas encore commencé.
 
 Reste :
-- Les points reportés faute d'infrastructure (structures, copier/coller de zone, GUI custom, stockage
-  global, effets caméra/HUD) — tous nécessitent un vrai "Java plugin" MCreator (classe Java compilée
-  et enregistrée au chargement du mod), une catégorie de plugin différente et plus lourde que celle-ci ;
-  je ne les ferai que si tu confirmes vouloir franchir cette étape.
+- Le "tour 3" ci-dessus, à prioriser (Statistiques+ et Item+/CustomModelData semblent les plus utiles).
+- Les points reportés faute d'infrastructure (GUI custom, stockage global persistant, effets
+  caméra/HUD, capture de zone *persistante* entre sessions) — tous nécessitent un vrai "Java plugin"
+  MCreator (classe Java compilée et enregistrée au chargement du mod), une catégorie de plugin
+  différente et plus lourde que celle-ci ; je ne les ferai que si tu confirmes vouloir franchir cette étape.
 - Les nombreux ★ (confort/niche) laissés de côté dans chaque section ci-dessus.
-- Les **icônes personnalisées sur les blocs** (amélioration secondaires ★★★ jamais faite).
+- Les **icônes personnalisées sur les blocs** (amélioration secondaire ★★★ jamais faite).

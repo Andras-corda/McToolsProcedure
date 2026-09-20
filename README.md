@@ -1,10 +1,17 @@
 # McToolsProcedure — Plugin MCreator (Forge 1.20.1)
 
-Plugin MCreator 2026.2 qui ajoute **153 blocs de procédure** répartis en **21 catégories**
-(`Math+`, `Texte+`, `Entité+`, `Monde+`, `Redstone+`, `UUID+`, `Interface+`, `Scan+`, `Logique+`,
-`Données+`, `Debug+`, `Inventaire+`, `Liste+`, `Combat+`, `Dimensions+`, `IA+`, `Loot+`, `Progression+`,
-`Permissions+`, `Physique+`, `Planification+`), générés pour le générateur **Forge 1.20.1**. L'affichage
-**suit la langue de MCreator** : français si l'appli est en français, anglais sinon.
+Plugin MCreator 2026.2 qui ajoute **153 blocs de procédure** répartis en **21 catégories**, elles-mêmes
+regroupées en **5 groupes parents** (sous-catégories imbriquées, comme les catégories natives de
+MCreator — ex. `Block procedures` > `Actions`/`Data`/`Energy & fluid`) :
+
+- **Math & Texte+** → `Math+`, `Texte+`
+- **Entités & Combat+** → `Entité+`, `IA+`, `Combat+`, `Scan+`
+- **Monde & Environnement+** → `Monde+`, `Redstone+`, `Dimensions+`, `Physique+`
+- **Joueur & Interface+** → `Interface+`, `Progression+`, `Permissions+`, `Inventaire+`, `Loot+`
+- **Données & Logique+** → `Données+`, `UUID+`, `Liste+`, `Logique+`, `Planification+`, `Debug+`
+
+Générés pour le générateur **Forge 1.20.1**. L'affichage **suit la langue de MCreator** : français si
+l'appli est en français, anglais sinon.
 
 Voir [`ROADMAP.md`](ROADMAP.md) pour la feuille de route complète (ce qui est fait, ce qui reste ★★/★).
 
@@ -16,11 +23,15 @@ Voir [`McToolsProcedure_Blocs.md`](McToolsProcedure_Blocs.md) pour la liste comp
 McToolsProcedure/
 ├── src/main/resources/          ← LES VRAIS FICHIERS chargés par MCreator (à plat, obligatoire)
 │   ├── plugin.json
-│   ├── procedures/              ← définitions JSON des blocs + des 12 catégories ($xxx.json)
+│   ├── procedures/              ← définitions JSON des blocs + des 21 catégories ($xxx.json)
 │   ├── forge-1.20.1/procedures/ ← templates Freemarker (.java.ftl) qui génèrent le vrai code Java
 │   └── lang/                    ← traductions (suit la langue de MCreator)
-├── by-category/                 ← VUE DE NAVIGATION générée, un sous-dossier par catégorie
-│   ├── math/  text/  entity/  world/  redstone/  uuid/  gui/  scan/  logic/  data/  debug/  inventory/  list/
+├── by-category/                 ← VUE DE NAVIGATION générée, imbriquée comme dans MCreator
+│   ├── Math & Texte+/Math+, .../Texte+
+│   ├── Entités & Combat+/Entité+, .../IA+, .../Combat+, .../Scan+
+│   ├── Monde & Environnement+/Monde+, .../Redstone+, .../Dimensions+, .../Physique+
+│   ├── Joueur & Interface+/Interface+, .../Progression+, .../Permissions+, .../Inventaire+, .../Loot+
+│   ├── Données & Logique+/Données+, .../UUID+, .../Liste+, .../Logique+, .../Planification+, .../Debug+
 │   └── (chaque bloc y apparaît en paire lisible : nom_du_bloc.json + nom_du_bloc.java.ftl)
 └── tools/build-by-category.js   ← régénère by-category/ après une modification
 ```
@@ -32,6 +43,12 @@ sans recherche récursive dans des sous-dossiers. Ranger ces fichiers dans des s
 la génération de code (le bloc apparaîtrait dans MCreator mais son code ne se génèrerait plus).
 
 **`by-category/` est donc une vue de lecture/navigation**, régénérée à partir des vrais fichiers.
+
+Les groupes parents (`Math & Texte+`, `Entités & Combat+`, etc.) sont de vraies sous-catégories
+MCreator : chaque `$xxx.json` enfant porte un champ `"parent_category": "group_xxx"` pointant vers un
+`$group_xxx.json` sans parent (donc racine). MCreator imbrique alors les catégories en conséquence dans
+l'éditeur de procédures, exactement comme ses propres catégories natives.
+
 Pour modifier un bloc : édite-le dans `src/main/resources/`, puis relance :
 
 ```bash
@@ -109,3 +126,7 @@ dans `~/.mcreator/plugins/`).
   projectile, explosion sans dégât de bloc) ; **Planification+** (minuterie répétée annulable). Là
   aussi, beaucoup de doublons natifs détectés et évités (changer de dimension, définir une cible,
   pathfinding, niveaux d'XP, tables de loot, tchat/broadcast, gravité) — voir [ROADMAP.md](ROADMAP.md).
+- **v2.5.0** : les 21 catégories sont désormais regroupées en **5 sous-catégories imbriquées**
+  (`parent_category`), sur le même principe que les catégories natives de MCreator (ex. `Block
+  procedures` > `Actions`/`Data`/`Energy & fluid`) — voir le regroupement ci-dessus. `by-category/`
+  reflète maintenant cette même hiérarchie.
