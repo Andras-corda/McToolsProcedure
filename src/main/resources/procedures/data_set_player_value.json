@@ -1,0 +1,15 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "player", "check": "Entity" },
+    { "type": "input_value", "name": "key", "check": "String" },
+    { "type": "input_value", "name": "value", "check": "String" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#5b95a5",
+  "mcreator": {
+    "toolbox_id": "data",
+    "inputs": ["player", "key", "value"]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "player", "check": "Entity" },
+    {
+      "type": "field_dropdown",
+      "name": "layer",
+      "options": [
+        ["Cape", "CAPE"],
+        ["Veste", "JACKET"],
+        ["Manche gauche", "LEFT_SLEEVE"],
+        ["Manche droite", "RIGHT_SLEEVE"],
+        ["Jambe gauche", "LEFT_PANTS"],
+        ["Jambe droite", "RIGHT_PANTS"],
+        ["Chapeau", "HAT"]
+      ]
+    },
+    { "type": "input_value", "name": "visible", "check": "Boolean" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a55b95",
+  "mcreator": {
+    "toolbox_id": "gui",
+    "inputs": ["player", "visible"],
+    "fields": ["layer"]
+  }
+}

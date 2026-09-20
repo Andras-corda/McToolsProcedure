@@ -1,0 +1,16 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" },
+    { "type": "input_value", "name": "max_distance", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#5ba5a2",
+  "mcreator": {
+    "toolbox_id": "scan",
+    "inputs": ["entity", "x", "y", "z", "max_distance"]
+  }
+}

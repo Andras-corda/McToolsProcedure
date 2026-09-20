@@ -1,0 +1,13 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "text", "check": "String" },
+    { "type": "input_value", "name": "search", "check": "String" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#5ba58a",
+  "mcreator": {
+    "toolbox_id": "text",
+    "inputs": ["text", "search"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "viewer", "check": "Entity" },
+    { "type": "input_value", "name": "target", "check": "Entity" },
+    { "type": "input_value", "name": "fov_degrees", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#5ba5a2",
+  "mcreator": {
+    "toolbox_id": "scan",
+    "inputs": ["viewer", "target", "fov_degrees"]
+  }
+}

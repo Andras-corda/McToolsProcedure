@@ -1,0 +1,13 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "list", "check": "MTPList" },
+    { "type": "input_value", "name": "value" }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#5b6ea5",
+  "mcreator": {
+    "toolbox_id": "list",
+    "inputs": ["list", "value"]
+  }
+}

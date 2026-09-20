@@ -1,0 +1,16 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "value", "check": "Number" },
+    { "type": "input_value", "name": "in_min", "check": "Number" },
+    { "type": "input_value", "name": "in_max", "check": "Number" },
+    { "type": "input_value", "name": "out_min", "check": "Number" },
+    { "type": "input_value", "name": "out_max", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#5b80a5",
+  "mcreator": {
+    "toolbox_id": "math",
+    "inputs": ["value", "in_min", "in_max", "out_min", "out_max"]
+  }
+}

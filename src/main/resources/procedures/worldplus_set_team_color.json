@@ -1,0 +1,39 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "teamname", "check": "String" },
+    {
+      "type": "field_dropdown",
+      "name": "color",
+      "options": [
+        ["Noir", "BLACK"],
+        ["Bleu foncé", "DARK_BLUE"],
+        ["Vert foncé", "DARK_GREEN"],
+        ["Cyan foncé", "DARK_AQUA"],
+        ["Rouge foncé", "DARK_RED"],
+        ["Violet foncé", "DARK_PURPLE"],
+        ["Or", "GOLD"],
+        ["Gris", "GRAY"],
+        ["Gris foncé", "DARK_GRAY"],
+        ["Bleu", "BLUE"],
+        ["Vert", "GREEN"],
+        ["Cyan", "AQUA"],
+        ["Rouge", "RED"],
+        ["Violet", "LIGHT_PURPLE"],
+        ["Jaune", "YELLOW"],
+        ["Blanc", "WHITE"]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a5875b",
+  "mcreator": {
+    "toolbox_id": "entity",
+    "inputs": ["teamname"],
+    "fields": ["color"],
+    "dependencies": [
+      { "name": "world", "type": "world" }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#a5875b",
+  "mcreator": {
+    "toolbox_id": "entity",
+    "inputs": ["entity", "x", "y", "z"]
+  }
+}

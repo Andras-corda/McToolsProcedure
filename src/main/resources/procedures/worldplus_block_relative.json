@@ -1,0 +1,20 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" },
+    { "type": "input_value", "name": "dx", "check": "Number" },
+    { "type": "input_value", "name": "dy", "check": "Number" },
+    { "type": "input_value", "name": "dz", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "MCItemBlock",
+  "colour": "#a5875b",
+  "mcreator": {
+    "toolbox_id": "world",
+    "inputs": ["x", "y", "z", "dx", "dy", "dz"],
+    "dependencies": [
+      { "name": "world", "type": "world" }
+    ]
+  }
+}

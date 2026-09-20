@@ -1,0 +1,14 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "label", "check": "String" },
+    { "type": "input_value", "name": "value", "check": "String" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#767676",
+  "mcreator": {
+    "toolbox_id": "debug",
+    "inputs": ["label", "value"]
+  }
+}

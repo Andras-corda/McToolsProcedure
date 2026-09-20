@@ -1,0 +1,39 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "particle_type",
+      "options": [
+        ["Flamme", "FLAME"],
+        ["Fumée", "SMOKE"],
+        ["Grosse fumée", "LARGE_SMOKE"],
+        ["Cœur", "HEART"],
+        ["Explosion", "EXPLOSION"],
+        ["Portail", "PORTAL"],
+        ["Nuage", "CLOUD"],
+        ["Note de musique", "NOTE"],
+        ["Critique", "CRIT"],
+        ["Tige de l'End", "END_ROD"],
+        ["Flocon de neige", "SNOWFLAKE"],
+        ["Flamme d'âme", "SOUL_FIRE_FLAME"]
+      ]
+    },
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" },
+    { "type": "input_value", "name": "radius", "check": "Number" },
+    { "type": "input_value", "name": "points", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a5875b",
+  "mcreator": {
+    "toolbox_id": "world",
+    "inputs": ["x", "y", "z", "radius", "points"],
+    "fields": ["particle_type"],
+    "dependencies": [
+      { "name": "world", "type": "world" }
+    ]
+  }
+}

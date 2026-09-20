@@ -1,0 +1,15 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "id", "check": "String" },
+    { "type": "input_value", "name": "interval", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#5b5ba5",
+  "mcreator": {
+    "toolbox_id": "logic",
+    "inputs": ["entity", "id", "interval"],
+    "dependencies": [ { "name": "world", "type": "world" } ]
+  }
+}

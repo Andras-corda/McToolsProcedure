@@ -1,0 +1,18 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" },
+    { "type": "input_value", "name": "power", "check": "Number" },
+    { "type": "input_value", "name": "causes_fire", "check": "Boolean" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a58f6e",
+  "mcreator": {
+    "toolbox_id": "physics",
+    "inputs": ["x", "y", "z", "power", "causes_fire"],
+    "dependencies": [ { "name": "world", "type": "world" } ]
+  }
+}

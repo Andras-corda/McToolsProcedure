@@ -1,0 +1,18 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" },
+    { "type": "input_value", "name": "radius", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#a5875b",
+  "mcreator": {
+    "toolbox_id": "world",
+    "inputs": ["x", "y", "z", "radius"],
+    "dependencies": [
+      { "name": "world", "type": "world" }
+    ]
+  }
+}

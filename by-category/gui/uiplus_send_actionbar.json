@@ -1,0 +1,14 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "player", "check": "Entity" },
+    { "type": "input_value", "name": "text", "check": "String" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a55b95",
+  "mcreator": {
+    "toolbox_id": "gui",
+    "inputs": ["player", "text"]
+  }
+}

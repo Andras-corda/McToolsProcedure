@@ -1,0 +1,33 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "id", "check": "String" },
+    { "type": "input_value", "name": "title", "check": "String" },
+    { "type": "input_value", "name": "progress", "check": "Number" },
+    {
+      "type": "field_dropdown",
+      "name": "color",
+      "options": [
+        ["Rose", "PINK"],
+        ["Bleu", "BLUE"],
+        ["Rouge", "RED"],
+        ["Vert", "GREEN"],
+        ["Jaune", "YELLOW"],
+        ["Violet", "PURPLE"],
+        ["Blanc", "WHITE"]
+      ]
+    },
+    { "type": "input_value", "name": "player", "check": "Entity" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a55b95",
+  "mcreator": {
+    "toolbox_id": "gui",
+    "inputs": ["id", "title", "progress", "player"],
+    "fields": ["color"],
+    "dependencies": [
+      { "name": "world", "type": "world" }
+    ]
+  }
+}

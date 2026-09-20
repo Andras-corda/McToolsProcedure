@@ -1,0 +1,19 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "text", "check": "String" },
+    {
+      "type": "field_dropdown",
+      "name": "color",
+      "options": [
+        ["Noir", "0"], ["Bleu foncé", "1"], ["Vert foncé", "2"], ["Cyan foncé", "3"],
+        ["Rouge foncé", "4"], ["Violet foncé", "5"], ["Or", "6"], ["Gris", "7"],
+        ["Gris foncé", "8"], ["Bleu", "9"], ["Vert", "a"], ["Cyan", "b"],
+        ["Rouge", "c"], ["Violet", "d"], ["Jaune", "e"], ["Blanc", "f"]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "String",
+  "colour": "#5ba58a",
+  "mcreator": { "toolbox_id": "text", "inputs": ["text"], "fields": ["color"] }
+}

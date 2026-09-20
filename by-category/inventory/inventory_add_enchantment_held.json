@@ -1,0 +1,12 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "enchantment", "check": "String" },
+    { "type": "input_value", "name": "level", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a58f5b",
+  "mcreator": { "toolbox_id": "inventory", "inputs": ["entity", "enchantment", "level"] }
+}

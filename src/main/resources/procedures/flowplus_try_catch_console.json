@@ -1,0 +1,14 @@
+{
+  "args0": [
+    { "type": "input_statement", "name": "body" }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#5b5ba5",
+  "mcreator": {
+    "toolbox_id": "logic",
+    "statements": [
+      { "name": "body" }
+    ]
+  }
+}

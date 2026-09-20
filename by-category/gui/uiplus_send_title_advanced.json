@@ -1,0 +1,18 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "player", "check": "Entity" },
+    { "type": "input_value", "name": "title", "check": "String" },
+    { "type": "input_value", "name": "subtitle", "check": "String" },
+    { "type": "input_value", "name": "fadein", "check": "Number" },
+    { "type": "input_value", "name": "stay", "check": "Number" },
+    { "type": "input_value", "name": "fadeout", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a55b95",
+  "mcreator": {
+    "toolbox_id": "gui",
+    "inputs": ["player", "title", "subtitle", "fadein", "stay", "fadeout"]
+  }
+}

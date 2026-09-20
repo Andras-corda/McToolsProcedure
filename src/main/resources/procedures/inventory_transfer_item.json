@@ -1,0 +1,13 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "from_entity", "check": "Entity" },
+    { "type": "input_value", "name": "to_entity", "check": "Entity" },
+    { "type": "input_value", "name": "item", "check": "MCItem" },
+    { "type": "input_value", "name": "amount", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a58f5b",
+  "mcreator": { "toolbox_id": "inventory", "inputs": ["from_entity", "to_entity", "item", "amount"] }
+}

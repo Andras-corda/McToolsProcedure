@@ -1,0 +1,15 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "String",
+  "colour": "#7b9e5b",
+  "mcreator": {
+    "toolbox_id": "world",
+    "inputs": ["x", "y", "z"],
+    "dependencies": [ { "name": "world", "type": "world" } ]
+  }
+}

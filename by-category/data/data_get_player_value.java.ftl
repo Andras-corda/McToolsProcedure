@@ -1,0 +1,1 @@
+((${input$player}).getPersistentData().contains("mtp_data_" + String.valueOf(${input$key})) ? (${input$player}).getPersistentData().getString("mtp_data_" + String.valueOf(${input$key})) : String.valueOf(${input$default_value}))

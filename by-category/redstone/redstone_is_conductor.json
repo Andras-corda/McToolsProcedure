@@ -1,0 +1,15 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#a55b5b",
+  "mcreator": {
+    "toolbox_id": "redstone",
+    "inputs": ["x", "y", "z"],
+    "dependencies": [ { "name": "world", "type": "world" } ]
+  }
+}

@@ -1,0 +1,1 @@
+(world.getEntitiesOfClass(Entity.class, new AABB((${input$x}) - (${input$radius}), (${input$y}) - (${input$radius}), (${input$z}) - (${input$radius}), (${input$x}) + (${input$radius}), (${input$y}) + (${input$radius}), (${input$z}) + (${input$radius}))).size())

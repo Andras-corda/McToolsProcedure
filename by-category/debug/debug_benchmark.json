@@ -1,0 +1,12 @@
+{
+  "args0": [
+    { "type": "input_statement", "name": "body" }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#767676",
+  "mcreator": {
+    "toolbox_id": "debug",
+    "statements": [ { "name": "body" } ]
+  }
+}

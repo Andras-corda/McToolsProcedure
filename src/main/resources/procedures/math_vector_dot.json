@@ -1,0 +1,14 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "x1", "check": "Number" },
+    { "type": "input_value", "name": "y1", "check": "Number" },
+    { "type": "input_value", "name": "z1", "check": "Number" },
+    { "type": "input_value", "name": "x2", "check": "Number" },
+    { "type": "input_value", "name": "y2", "check": "Number" },
+    { "type": "input_value", "name": "z2", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#5b80a5",
+  "mcreator": { "toolbox_id": "math", "inputs": ["x1", "y1", "z1", "x2", "y2", "z2"] }
+}

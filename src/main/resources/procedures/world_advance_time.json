@@ -1,0 +1,14 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "amount", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#7b9e5b",
+  "mcreator": {
+    "toolbox_id": "world",
+    "inputs": ["amount"],
+    "dependencies": [ { "name": "world", "type": "world" } ]
+  }
+}

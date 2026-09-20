@@ -1,0 +1,19 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "block", "check": "MCItemBlock" },
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" },
+    { "type": "input_value", "name": "radius", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#a5875b",
+  "mcreator": {
+    "toolbox_id": "world",
+    "inputs": ["block", "x", "y", "z", "radius"],
+    "dependencies": [
+      { "name": "world", "type": "world" }
+    ]
+  }
+}
