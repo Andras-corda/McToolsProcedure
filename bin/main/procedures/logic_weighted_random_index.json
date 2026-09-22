@@ -1,0 +1,9 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "weights", "check": "MTPList" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#5b5ba5",
+  "mcreator": { "toolbox_id": "logic", "inputs": ["weights"] }
+}

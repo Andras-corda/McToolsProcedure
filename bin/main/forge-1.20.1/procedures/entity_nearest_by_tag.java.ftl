@@ -1,0 +1,5 @@
+(world.getEntitiesOfClass(Entity.class, new AABB((${input$x}) - (${input$radius}), (${input$y}) - (${input$radius}), (${input$z}) - (${input$radius}), (${input$x}) + (${input$radius}), (${input$y}) + (${input$radius}), (${input$z}) + (${input$radius})))
+    .stream()
+    .filter(_nbtE -> _nbtE.getTags().contains(String.valueOf(${input$tag})))
+    .min(java.util.Comparator.comparingDouble(_nbtE2 -> _nbtE2.position().distanceTo(new Vec3(${input$x}, ${input$y}, ${input$z}))))
+    .orElse(null))

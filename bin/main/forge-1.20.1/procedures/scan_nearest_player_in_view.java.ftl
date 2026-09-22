@@ -1,0 +1,6 @@
+(world.players().stream()
+    .filter(_npvP -> _npvP != (${input$viewer})
+        && _npvP.position().distanceTo((${input$viewer}).position()) <= (${input$radius})
+        && (${input$viewer}).getLookAngle().dot((_npvP.position().subtract((${input$viewer}).getEyePosition())).normalize()) >= Math.cos(Math.toRadians((${input$fov_degrees}) / 2.0)))
+    .min(java.util.Comparator.comparingDouble(_npvP2 -> _npvP2.position().distanceTo((${input$viewer}).position())))
+    .orElse(null))

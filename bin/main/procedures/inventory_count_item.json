@@ -1,0 +1,13 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "item", "check": "MCItem" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#a58f5b",
+  "mcreator": {
+    "toolbox_id": "inventory",
+    "inputs": ["entity", "item"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "uuid1", "check": "String" },
+    { "type": "input_value", "name": "uuid2", "check": "String" }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#a5875b",
+  "mcreator": {
+    "toolbox_id": "uuid",
+    "inputs": ["uuid1", "uuid2"]
+  }
+}

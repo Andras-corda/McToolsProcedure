@@ -1,0 +1,1 @@
+((${opt.toInt(input$index)}) >= 0 && (${opt.toInt(input$index)}) < ((java.util.List<?>) ${input$list}).size() && ((java.util.List<?>) ${input$list}).get(${opt.toInt(input$index)}) instanceof Boolean _lgbBool ? _lgbBool : false)

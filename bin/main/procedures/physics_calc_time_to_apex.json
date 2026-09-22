@@ -1,0 +1,10 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "launch_speed", "check": "Number" },
+    { "type": "input_value", "name": "gravity_per_tick", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#a58f6e",
+  "mcreator": { "toolbox_id": "physics", "inputs": ["launch_speed", "gravity_per_tick"] }
+}

@@ -1,0 +1,12 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "threat", "check": "Entity" },
+    { "type": "input_value", "name": "speed", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#8f6e5b",
+  "mcreator": { "toolbox_id": "ai", "inputs": ["entity", "threat", "speed"] }
+}

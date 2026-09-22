@@ -1,0 +1,18 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "objective", "check": "String" },
+    { "type": "input_value", "name": "line", "check": "String" },
+    { "type": "input_value", "name": "score", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#a55b95",
+  "mcreator": {
+    "toolbox_id": "gui",
+    "inputs": ["objective", "line", "score"],
+    "dependencies": [
+      { "name": "world", "type": "world" }
+    ]
+  }
+}

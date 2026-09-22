@@ -1,0 +1,14 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "text", "check": "String" },
+    { "type": "input_value", "name": "delimiter", "check": "String" },
+    { "type": "input_value", "name": "index", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "String",
+  "colour": "#5ba58a",
+  "mcreator": {
+    "toolbox_id": "text",
+    "inputs": ["text", "delimiter", "index"]
+  }
+}

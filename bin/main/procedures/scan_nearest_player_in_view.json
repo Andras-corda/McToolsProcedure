@@ -1,0 +1,15 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "viewer", "check": "Entity" },
+    { "type": "input_value", "name": "radius", "check": "Number" },
+    { "type": "input_value", "name": "fov_degrees", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Entity",
+  "colour": "#5ba5a2",
+  "mcreator": {
+    "toolbox_id": "scan",
+    "inputs": ["viewer", "radius", "fov_degrees"],
+    "dependencies": [ { "name": "world", "type": "world" } ]
+  }
+}

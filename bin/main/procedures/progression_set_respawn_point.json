@@ -1,0 +1,13 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "player", "check": "Entity" },
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#5b8f6e",
+  "mcreator": { "toolbox_id": "progression", "inputs": ["player", "x", "y", "z"] }
+}

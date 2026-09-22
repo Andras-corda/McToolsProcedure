@@ -1,0 +1,9 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "player", "check": "Entity" }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#6e5b8f",
+  "mcreator": { "toolbox_id": "permission", "inputs": ["player"] }
+}

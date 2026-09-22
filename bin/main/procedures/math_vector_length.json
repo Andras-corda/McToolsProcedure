@@ -1,0 +1,11 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "x", "check": "Number" },
+    { "type": "input_value", "name": "y", "check": "Number" },
+    { "type": "input_value", "name": "z", "check": "Number" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#5b80a5",
+  "mcreator": { "toolbox_id": "math", "inputs": ["x", "y", "z"] }
+}

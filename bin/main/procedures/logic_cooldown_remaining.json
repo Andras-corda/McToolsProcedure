@@ -1,0 +1,16 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "id", "check": "String" }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#5b5ba5",
+  "mcreator": {
+    "toolbox_id": "logic",
+    "inputs": ["entity", "id"],
+    "dependencies": [
+      { "name": "world", "type": "world" }
+    ]
+  }
+}
